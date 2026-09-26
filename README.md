@@ -4,9 +4,7 @@
 
 Based on: *SOCES: Similarity-Ordered Consecutive-Exclude Stopping with Typed Probabilistic LLMs in Medical Systematic Reviews*
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-ORG/YOUR-REPO/blob/main/notebook/soces_screening.ipynb)
-
-> **Replace `YOUR-ORG/YOUR-REPO`** with your GitHub repository path before sharing.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bigwisu/SOCES/blob/main/notebook/soces_screening.ipynb)
 
 ---
 
