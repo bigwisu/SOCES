@@ -39,7 +39,7 @@ No local Python install required if running on Google Colab.
 
 ```bash
 pip install jupyter pybtex pandas pyarrow numpy requests tqdm ipywidgets
-jupyter notebook notebook/soces_screening.ipynb
+jupyter notebook soces_screening.ipynb
 ```
 
 ---
@@ -157,3 +157,11 @@ Per-record cost at standard OpenRouter pricing (check https://openrouter.ai/mode
 | 300 records | ~$0.002 | ~$0.01 | ~$0.01 |
 | 500 records | ~$0.003 | ~$0.02 | ~$0.02 |
 | 2 000 records | ~$0.01 | ~$0.07 | ~$0.08 |
+
+---
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for full text.
+
+You are free to use, modify, and distribute this notebook for any purpose, including commercial research, with attribution.
