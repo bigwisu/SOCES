@@ -13,7 +13,7 @@ Based on: *SOCES: Similarity-Ordered Consecutive-Exclude Stopping with Typed Pro
 | Requirement | Notes |
 |---|---|
 | OpenRouter API key | https://openrouter.ai — free tier sufficient for small reviews |
-| A `.bib` file | Every entry **must** have `title` + `abstract` fields; max **2 000 records** |
+| A `.bib` file | Every entry **must** have `title` + `abstract` fields; max **15 000 records** |
 
 No local Python install required if running on Google Colab.
 
@@ -50,7 +50,7 @@ jupyter notebook soces_screening.ipynb
 |---|---|
 | **1 — Install** | Installs `pybtex`, `pandas`, `pyarrow`, `numpy`, `requests`, `tqdm`, `ipywidgets` in-kernel |
 | **2 — Configure** | Paste OpenRouter key and SR objective; set SOCES parameters (defaults ready to use) |
-| **3 — Upload `.bib`** | `ipywidgets` file-picker; parses `title` + `abstract`; skips entries missing either; enforces 2 000-record cap |
+| **3 — Upload `.bib`** | `ipywidgets` file-picker; parses `title` + `abstract`; skips entries missing either; enforces 15 000-record cap |
 | **4 — Embed** | Batched `BAAI/bge-m3` embeddings via OpenRouter; saves corpus vectors + objective vector to **`embeddings.parquet`** |
 | **5 — Screen** | Loads Parquet → cosine-ranks all records → scores sequentially with `typesafe/jev-1.13` via `/api/alpha/decisions` → SOCES consecutive-exclude stopping |
 | **6 — PRISMA display** | PRISMA-trAIce flow block (AI excluded / forwarded for human review) + styled included-records table with scores |
@@ -119,7 +119,7 @@ Export from **Zotero**, **Mendeley**, **EndNote**, **PubMed**, or any tool that 
 |---|---|---|
 | `N_CONSECUTIVE` | `20` | Consecutive-exclude stopping window |
 | `P_CUTOFF` | `0.50` | Proposition inclusion threshold |
-| `MAX_BIB_RECORDS` | `2000` | Hard cap enforced at parse time |
+| `MAX_BIB_RECORDS` | `15000` | Hard cap enforced at parse time |
 | `ABSTRACT_CHARS` | `1500` | Characters of abstract sent to screener |
 | `PARQUET_PATH` | `embeddings.parquet` | Embedding cache file |
 
@@ -157,6 +157,8 @@ Per-record cost at standard OpenRouter pricing (check https://openrouter.ai/mode
 | 300 records | ~$0.002 | ~$0.01 | ~$0.01 |
 | 500 records | ~$0.003 | ~$0.02 | ~$0.02 |
 | 2 000 records | ~$0.01 | ~$0.07 | ~$0.08 |
+| 5 000 records | ~$0.02 | ~$0.18 | ~$0.20 |
+| 15 000 records | ~$0.06 | ~$0.55 | ~$0.61 |
 
 ---
 
