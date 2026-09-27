@@ -1,0 +1,66 @@
+{
+  "study": "SOCES: Similarity-Ordered Consecutive-Exclude Stopping with Typed Probabilistic LLMs in Medical Systematic Reviews",
+  "prisma_traice_items": {
+    "M5_structured_decision_logs": {
+      "status": "satisfied",
+      "artifact": "results.csv",
+      "description": "One row per candidate: review_id, pmid, score, decision, gold_label. Exact 1-token output per decision; zero parse failures."
+    },
+    "M6_ai_prompt_disclosure": {
+      "status": "satisfied",
+      "artifact": "v7_prompt_review.txt",
+      "description": "Full V7 noul_relevance typed proposition rubric. No hidden variables."
+    },
+    "M7_decision_thresholds": {
+      "status": "satisfied",
+      "description": "Probability cutoff p >= 0.50 (pre-specified on 5-review calibration set). Consecutive-exclude stopping n = 20. No raw similarity floor applied.",
+      "p_cutoff": 0.5,
+      "n_consecutive": 20,
+      "similarity_floor": null
+    },
+    "M8_ai_tool_identification": {
+      "status": "satisfied",
+      "model_screening": "typesafe/jev-1.13",
+      "model_embedding": "BAAI/bge-m3",
+      "api_endpoint_screening": "/api/alpha/decisions",
+      "api_endpoint_embedding": "/api/v1/embeddings"
+    },
+    "M9_human_oversight": {
+      "status": "satisfied",
+      "description": "Human reviewer screens the post-SOCES retained list. AI scores inform but do not constitute final inclusion decisions."
+    },
+    "M10_performance_validation": {
+      "status": "satisfied",
+      "description": "Proposition rubric selected via calibration sweep V0-V9 on 5-review calibration set. Operating parameters pre-specified before 70-review evaluation."
+    }
+  },
+  "benchmark_summary": {
+    "total_reviews": 70,
+    "total_candidate_pairs": 15895,
+    "gold_inclusions": 2659,
+    "p_cutoff": 0.5,
+    "n_consecutive": 20,
+    "model_calls_n20": 12083,
+    "forwarded_for_human_review": 10848,
+    "ai_excluded_by_score": 5047,
+    "gold_inclusions_recovered": 2543,
+    "micro_recall": 0.9564,
+    "mean_screening_burden_per_review": 172.6,
+    "median_screening_burden_per_review": 119.5
+  },
+  "prisma_flow_counts": {
+    "records_excluded_by_ai": 5047,
+    "records_forwarded_for_human_review": 10848,
+    "note": "Under SOCES n=20, p>=0.50. All records with score < 0.50 are AI-excluded. The 'by AI' PRISMA-trAIce count is the row count in results.csv where score < 0.50."
+  },
+  "data_files": {
+    "results.csv": "Per-record scores and decisions (columns: review_id, pmid, score, decision, gold_label). Primary M5 artifact.",
+    "summary.csv": "Per-SR confusion matrix and metrics (70 rows).",
+    "n_sweep.csv": "SOCES stopping parameter sweep n in {5,10,20,30,50,100,inf} \u2014 Table 1 in manuscript.",
+    "cutoff_sweep.csv": "Probability cutoff sweep 0.30-0.90 under n=20 \u2014 Table 2 in manuscript.",
+    "v7_prompt_review.txt": "Full V7 noul_relevance proposition rubric. M6 artifact.",
+    "sr_objectives.csv": "SR PMIDs, titles, and stripped research objectives (70 rows). No candidate document text included.",
+    "PRISMA_trAIce_log.json": "This file. Structured M5-M10 compliance record."
+  },
+  "licence_note": "Candidate document titles and abstracts (PubMed text) are not included in this repository. NLM licence prohibits bulk redistribution. Retrieve candidate text using the PMIDs in results.csv via the NCBI E-utilities API (https://www.ncbi.nlm.nih.gov/books/NBK25499/). Gold-standard inclusion labels sourced from Bentegeac et al. (2026) dataset, shared with permission from the original authors."
+}

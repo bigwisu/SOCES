@@ -1,0 +1,217 @@
+V7_objective_inclusive_false — Manual Prompt Review
+Generated from calibration sample (5 SRs, 273 papers)
+=====================================================================
+Each block shows exactly what Jev receives: the instruction text
+and the state key-value pairs. Nothing else is visible to the model.
+=====================================================================
+
+
+════════════════════════════════════════════════════════════════════
+CASE 1 of 8  |  BUCKET: FN_hard / GBS
+SR: 22226047  PMID: 16092460
+SCORES: old_proposition=0.38  →  V7=0.85  [recovered at t=0.5 ✓]
+════════════════════════════════════════════════════════════════════
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+Despite widespread use of intrapartum antibiotic prophylaxis, group B streptococcus remains a leading cause of morbidity and mortality in infants in Europe, the Americas, and Australia. However, estimates of disease burden in many countries outside of these regions is not available. We aimed to examine the current global burden of invasive disease and the serotype distribution of group B streptococcus isolates.
+We searched Medline, Embase, and Wholis databases for studies on invasive early-onset (day 0-6) and late-onset (day 7-89) group B streptococcal disease. Eligible studies were those that described incidence, deaths, or serotypes. We also reviewed reference lists and contacted experts to seek unpublished data and data missed by our search. Random effects meta-analysis was used to pool data.
+
+[paper_title]
+Trends in the epidemiology of neonatal sepsis of vertical transmission in the era of group B streptococcal prevention.
+
+[paper_abstract]
+To assess trends in the epidemiology of culture-proven and clinical neonatal sepsis of vertical transmission in the era of intrapartum antibiotic prophylaxis.
+Since 1995, the neonatal services of 28 acute-care teaching hospitals in Spain ("Grupo de Hospitales Castrillo") have been involved in the prospective surveillance of neonatal infection of vertical transmission. We here report the comparison of the incidence for the periods 1996-1997 and 2000-2001, and look separately at two groups of hospitals according to the time at which the official hospital policy to provide intrapartum antibiotic prophylaxis for group B Streptococcus (GBS) prevention was adopted. In 16 hospitals the policy was adopted in 1999 and in 10 before 1998 (nine hospitals in 1996, one in 1997).
+The incidence of proven sepsis decreased significantly by 22% and 54% in the hospitals that started prophylaxis in 1999 and before 1998, respectively. The incidence of GBS sepsis also declined significantly by 36.4% and 65.4% in both groups of hospitals, respectively. Significant variations in the incidence of clinical vertical sepsis as well as in the incidence of sepsis caused by Haemophilus influenzae and Klebsiella were not found. Sepsis caused by Escherichia coli increased in the hospitals with prophylaxis from 1999 and decreased in those that began prophylaxis before 1998, in which the mortality rate of proven and clinical sepsis also decreased significantly by 58.6%.
+
+
+════════════════════════════════════════════════════════════════════
+CASE 2 of 8  |  BUCKET: FN_hard / GBS
+SR: 22226047  PMID: 15232196
+SCORES: old_proposition=0.36  →  V7=0.94  [recovered at t=0.5 ✓]
+════════════════════════════════════════════════════════════════════
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+Despite widespread use of intrapartum antibiotic prophylaxis, group B streptococcus remains a leading cause of morbidity and mortality in infants in Europe, the Americas, and Australia. However, estimates of disease burden in many countries outside of these regions is not available. We aimed to examine the current global burden of invasive disease and the serotype distribution of group B streptococcus isolates.
+We searched Medline, Embase, and Wholis databases for studies on invasive early-onset (day 0-6) and late-onset (day 7-89) group B streptococcal disease. Eligible studies were those that described incidence, deaths, or serotypes. We also reviewed reference lists and contacted experts to seek unpublished data and data missed by our search. Random effects meta-analysis was used to pool data.
+
+[paper_title]
+Active surveillance of early onset disease due to group B streptococci in newborns.
+
+[paper_abstract]
+Early onset disease (EOD) due to group B streptococci (GBS) poses a serious threat in many countries. In the Czech Republic neither summarized data on the EOD incidence are available nor a nationwide prevention program has been initiated. The present surveillance was initiated to establish the incidence of EOD due to GBS in newborns in the Czech Republic, distribution of GBS serotypes and GBS susceptibility to antimicrobials.
+Both invasive and carrier GBS isolates from newborns and the data on the newborns' clinical status and maternal colonization and intrapartum prophylaxis were collected from 30 microbiological and clinical centres all over the Czech Republic within prospective active surveillance.
+Between January 2001 and September 2002, GBS isolates from 239 full-term and 46 preterm newborns were collected. Of the 285 GBS positive newborns, 105 had invasive EOD, 42 showed suspected EOD, and in 56 clinical diagnosis was not specified. The isolates obtained from newborns with confirmed invasive EOD were mostly of serotype III (42%), followed by serotypes V and Ia (13% each).
+
+
+════════════════════════════════════════════════════════════════════
+CASE 3 of 8  |  BUCKET: FN_hard / Burnout
+SR: 30326495  PMID: 17468736
+SCORES: old_proposition=0.30  →  V7=0.88  [recovered at t=0.5 ✓]
+════════════════════════════════════════════════════════════════════
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+Burnout is a self-reported job-related syndrome increasingly recognized as a critical factor affecting physicians and their patients. An accurate estimate of burnout prevalence among physicians would have important health policy implications, but the overall prevalence is unknown.
+To characterize the methods used to assess burnout and provide an estimate of the prevalence of physician burnout.
+Systematic search of EMBASE, ERIC, MEDLINE/PubMed, psycARTICLES, and psycINFO for studies on the prevalence of burnout in practicing physicians (ie, excluding physicians in training) published before June 1, 2018.
+
+[paper_title]
+Burnout in intensive care unit.
+
+[paper_abstract]
+The aim of this paper was to study in intensive care unit (ICU) the impact of variable "professional role" and "gender" on the defence mechanisms, on the troubles of mood and on the markers of the burnout syndrome, and to study the correlation between specific defence mechanisms or specific troubles of mood and the onset of burnout syndrome.
+An observational study by administration of psychometric tests was carried out. Twenty-five nurses and 25 doctors working in two different ICU were enrolled. Three psychometric tests concerning the defence mechanisms, the troubles of mood, and the burnout syndrome (Maslach Burnout Inventory) were administered.
+The study shows the presence within doctors of two dimensions of burnout syndrome (emotional exhaustion in women and depersonalization in men) much greater than nurses.
+
+
+════════════════════════════════════════════════════════════════════
+CASE 4 of 8  |  BUCKET: FN_hard / Burnout
+SR: 30326495  PMID: 23653994
+SCORES: old_proposition=0.36  →  V7=0.91  [recovered at t=0.5 ✓]
+════════════════════════════════════════════════════════════════════
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+Burnout is a self-reported job-related syndrome increasingly recognized as a critical factor affecting physicians and their patients. An accurate estimate of burnout prevalence among physicians would have important health policy implications, but the overall prevalence is unknown.
+To characterize the methods used to assess burnout and provide an estimate of the prevalence of physician burnout.
+Systematic search of EMBASE, ERIC, MEDLINE/PubMed, psycARTICLES, and psycINFO for studies on the prevalence of burnout in practicing physicians (ie, excluding physicians in training) published before June 1, 2018.
+
+[paper_title]
+Influence of age and length of service on the level of stress and burnout syndrome.
+
+[paper_abstract]
+The burnout syndrome is a response to chronic emotional and interpersonal stressors which are related to workplace. Medicine is one of the professions at the greatest risk of suffering from burnout syndrome. The aim of this study was to assess the presence of stress and burnout syndrome in relation with age and length of service in the family medicine physicians in the Republic of Srpska.
+The study was carried out on the basis of a questionnaire survey among family medicine physicians in seven Primary Health Care Centres from February to April 2010. The study included 199 (83.3%) female and 40 (16.7%) male participants.
+Age and length of service have important influence on the level of stress and burnout syndrome: the older the physicians and the higher the length of service the higher the level of stress and the higher the risk of burnout syndrome.
+
+
+════════════════════════════════════════════════════════════════════
+CASE 5 of 8  |  BUCKET: TP_high / ACE inhibitors
+SR: 24157497  PMID: 18354383
+SCORES: old_proposition=0.74  →  V7=0.91  [true positive, correctly high ✓]
+════════════════════════════════════════════════════════════════════
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+To assess the effects of different classes of antihypertensive treatments, including monotherapy and combination therapy, on survival and major renal outcomes in patients with diabetes.
+Systematic review and bayesian network meta-analysis of randomised clinical trials.
+Electronic literature search of PubMed, Medline, Scopus, and the Cochrane Library for studies published up to December 2011.
+Randomised clinical trials of antihypertensive therapy (angiotensin converting enzyme (ACE) inhibitors, angiotensin receptor blockers (ARBs), α blockers, β blockers, calcium channel blockers, diuretics, and their combinations) in patients with diabetes.
+
+[paper_title]
+Effects of different ACE inhibitor combinations on albuminuria: results of the GUARD study.
+
+[paper_abstract]
+Clinical practice guidelines recommend blockers of the renin-angiotensin system alone or in combination with other agents to reduce blood pressure and albuminuria in patients with type 2 diabetes. Here we tested the hypothesis that combining an ACE inhibitor with either a thiazide diuretic or a calcium channel blocker will cause similar reductions in blood pressure and albuminuria in hypertensive type 2 diabetics. We conducted a double blind randomized controlled trial on 332 hypertensive, albuminuric type 2 diabetic patients treated with benazepril with either amlodipine or hydrochlorothiazide for 1 year.
+Both combinations significantly reduced the urinary albumin to creatinine ratio and sitting blood pressure of the entire cohort.
+
+
+════════════════════════════════════════════════════════════════════
+CASE 6 of 8  |  BUCKET: TP_high / GBS
+SR: 22226047  PMID: 15635965
+SCORES: old_proposition=0.80  →  V7=0.95  [true positive, correctly high ✓]
+════════════════════════════════════════════════════════════════════
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+Despite widespread use of intrapartum antibiotic prophylaxis, group B streptococcus remains a leading cause of morbidity and mortality in infants in Europe, the Americas, and Australia. However, estimates of disease burden in many countries outside of these regions is not available. We aimed to examine the current global burden of invasive disease and the serotype distribution of group B streptococcus isolates.
+We searched Medline, Embase, and Wholis databases for studies on invasive early-onset (day 0-6) and late-onset (day 7-89) group B streptococcal disease. Eligible studies were those that described incidence, deaths, or serotypes. We also reviewed reference lists and contacted experts to seek unpublished data and data missed by our search. Random effects meta-analysis was used to pool data.
+
+[paper_title]
+Invasive group B streptococcal disease in infants: a 19-year nationwide study. Serotype distribution, incidence and recurrent infection.
+
+[paper_abstract]
+During the period 1984-2002, 472 cases of invasive group B streptococcal (GBS) disease in infants aged 0-90 days in Denmark were registered. The overall incidence was 0.4/1000 live births. Most infants (73%) had early-onset GBS infection with 53% registered within the first day. Serotype III predominated (59%) with other serotypes as follows: Ia (16%), Ib (8%), NT (7%), II (6%), other serotypes (5%). Recurrence of GBS infection was registered in six infants; the interval with no antibiotic therapy varied from 2 to 39 days.
+Invasive GBS infections in infants are still a problem in Denmark, and recurrent infections are registered in 1% of these infants.
+
+
+════════════════════════════════════════════════════════════════════
+CASE 7 of 8  |  BUCKET: FP_border / Burnout
+SR: 30326495  PMID: 17828575
+SCORES: old_proposition=0.63  →  V7=0.93  [false positive — V7 still includes this]
+════════════════════════════════════════════════════════════════════
+
+NOTE: This paper is NOT a gold-standard inclusion for this SR.
+V7 scores it 0.93. Review whether Jev's judgment is correct or whether
+the gold label is wrong / the paper genuinely should have been included.
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+Burnout is a self-reported job-related syndrome increasingly recognized as a critical factor affecting physicians and their patients. An accurate estimate of burnout prevalence among physicians would have important health policy implications, but the overall prevalence is unknown.
+To characterize the methods used to assess burnout and provide an estimate of the prevalence of physician burnout.
+Systematic search of EMBASE, ERIC, MEDLINE/PubMed, psycARTICLES, and psycINFO for studies on the prevalence of burnout in practicing physicians (ie, excluding physicians in training) published before June 1, 2018.
+
+[paper_title]
+Career satisfaction, practice patterns and burnout among surgical oncologists: report on the quality of life of members of the Society of Surgical Oncology.
+
+[paper_abstract]
+Studies show that 30-50% of medical oncologists experience burnout, but little is known about burnout among surgical oncologists. We hypothesized that wide variation in burnout and career satisfaction exist among surgical oncologists.
+In April 2006, members of the Society of Surgical Oncology (SSO) were sent an anonymous, cross-sectional survey evaluating demographic variables, practice characteristics, career satisfaction, burnout, and quality of life. Of the 1519 surgical oncologists surveyed, 549 (36%) responded.
+Overall, 28% of respondents had burnout. Burnout was more common among respondents age 50 years or younger (31% vs 22%) and women (37% vs 26%).
+Although surgical oncologists indicated a high level of career satisfaction, nearly a third experienced burnout.
+
+
+════════════════════════════════════════════════════════════════════
+CASE 8 of 8  |  BUCKET: TN / White rice
+SR: 22422870  PMID: 18343879
+SCORES: old_proposition=0.01  →  V7=0.02  [true negative, correctly near-zero ✓]
+════════════════════════════════════════════════════════════════════
+
+INSTRUCTION:
+Given the systematic review objective in review_objective, does this paper contribute relevant evidence — even indirectly?
+True if: The paper reports empirical data on the topic or population described in review_objective, regardless of whether its study design or subpopulation exactly matches the review's primary methodology.
+False if: The paper's topic is entirely unrelated to review_objective, or it contains no data (e.g. editorial, commentary, opinion piece).
+
+STATE:
+[review_objective]
+To summarise evidence on the association between white rice consumption and risk of type 2 diabetes and to quantify the potential dose-response relation.
+Meta-analysis of prospective cohort studies.
+Searches of Medline and Embase databases for articles published up to January 2012 using keywords that included both rice intake and diabetes; further searches of references of included original studies.
+Included studies were prospective cohort studies that reported risk estimates for type 2 diabetes by rice intake levels.
+Relative risks were pooled using a random effects model; dose-response relations were evaluated using data from all rice intake categories in each study.
+
+[paper_title]
+Pulmonary function and the risk of functional limitation in chronic obstructive pulmonary disease.
+
+[paper_abstract]
+The authors' objective was to analyze the impact of respiratory impairment on the risk of physical functional limitations among adults with chronic obstructive pulmonary disease (COPD). They hypothesized that greater pulmonary function decrement would result in a broad array of physical functional limitations involving organ systems remote from the lung.
+The authors used baseline data from the Function, Living, Outcomes, and Work (FLOW) study, a prospective cohort study of adults with COPD recruited from northern California in 2005-2007.
+Greater pulmonary function impairment was associated with poorer physical performance battery scores and less distance walked during the 6-Minute Walk Test.

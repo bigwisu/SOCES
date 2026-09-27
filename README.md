@@ -160,6 +160,24 @@ Per-record cost at standard OpenRouter pricing (check https://openrouter.ai/mode
 
 ---
 
+## Validation data (peer review)
+
+The `validation/` directory contains the replication package from the benchmark study — reviewers can verify every figure in Table 1 and Table 2 of the manuscript without re-running inference.
+
+| File | Description |
+|---|---|
+| `validation/results.csv` | Per-record Jev scores for all 15,895 candidate pairs across 70 reviews (columns: `review_id`, `pmid`, `score`, `decision`, `gold_label`) |
+| `validation/summary.csv` | Per-SR confusion matrix and performance metrics (70 rows) |
+| `validation/n_sweep.csv` | SOCES stopping parameter sweep *n* ∈ {5,10,20,30,50,100,∞} — manuscript Table 1 |
+| `validation/cutoff_sweep.csv` | Probability cutoff sweep 0.30–0.90 under SOCES *n* = 20 — manuscript Table 2 |
+| `validation/v7_prompt_review.txt` | Full V7 `noul_relevance` proposition rubric — PRISMA-trAIce M6 artifact |
+| `validation/sr_objectives.csv` | SR PMIDs, published titles, and stripped research objectives (70 rows) |
+| `validation/PRISMA_trAIce_log.json` | Structured M5–M10 compliance record with benchmark counts |
+
+PubMed candidate titles and abstracts are not included (NLM licence). Retrieve text for any PMID via the NCBI E-utilities API. See `validation/README.md` for full details, column schemas, and a Python snippet to reproduce the manuscript tables.
+
+---
+
 ## License
 
 MIT License — see [LICENSE](LICENSE) for full text.
