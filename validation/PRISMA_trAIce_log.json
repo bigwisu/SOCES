@@ -45,8 +45,10 @@
     "ai_excluded_by_score": 5047,
     "gold_inclusions_recovered": 2543,
     "micro_recall": 0.9564,
-    "mean_screening_burden_per_review": 172.6,
-    "median_screening_burden_per_review": 119.5
+    "mean_forwarded_to_human_per_review": 155.0,
+    "median_forwarded_to_human_per_review": 99.5,
+    "mean_model_calls_per_review_n20": 172.6,
+    "median_model_calls_per_review_n20": 119.5
   },
   "prisma_flow_counts": {
     "records_excluded_by_ai": 5047,
